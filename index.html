@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Unicorn Dreams - QA Test Site</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="main.js"></script>
+</head>
+<body>
+  <header>
+    <h1>🦄 Unicorn Dreams - QA Test Site</h1>
+  </header>
+
+  <main>
+    <section id="intro">
+      <p>Bienvenida a un sitio creado para pruebas QA con errores intencionales y escenarios reales.</p>
+      <img
+        src="https://i.imgur.com/f8MbkZb.png"
+        alt="Unicornio mágico"
+        class="unicorn-img"
+      />
+    </section>
+
+    <section id="form-section">
+      <h2>Formulario de Registro (con errores)</h2>
+      <form id="signup-form" novalidate>
+        <label for="email">Correo electrónico:</label><br />
+        <input type="email" id="email" name="email" placeholder="ejemplo@correo.com" /><br />
+
+        <label for="password">Contraseña (mínimo 6 caracteres):</label><br />
+        <input type="password" id="password" name="password" /><br />
+
+        <label for="confirm-password">Confirmar contraseña:</label><br />
+        <input type="password" id="confirm-password" name="confirm-password" /><br />
+
+        <button type="submit">Registrarse</button>
+      </form>
+      <p id="form-error" class="error-msg"></p>
+    </section>
+
+    <section id="loading-test">
+      <h2>Prueba de carga lenta</h2>
+      <button id="load-data-btn">Cargar datos mágicos</button>
+      <div id="data-output"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Creado para testing QA - Clara Paiva</p>
+  </footer>
+</body>
+</html>
